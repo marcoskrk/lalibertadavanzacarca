@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Libertad Avanza - Formulario de inquietudes y próximos eventos">
+    <meta name="keywords" content="Libertad Avanza, Inquietudes, Eventos, Carcaraña">
+    <meta name="author" content="Tu Nombre">
+    <title>La Libertad Avanza - Carcaraña</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <!-- Imagen de cabecera -->
+            <img src="images.img/imagen1.jpg" alt="La Libertad Avanza" class="header-image">
+            <h1 class="header-title">La Libertad Avanza - Carcaraña</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Inquietudes -->
+        <section id="inquietudes">
+            <h2>Deja tu Inquietud</h2>
+            <p>Tu voz es importante, comparte tus inquietudes y participa en nuestros eventos.</p>
+            <form action="https://formspree.io/f/myybdjzy" method="POST" id="contact-form">
+                <label for="nombre">Tu Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+
+                <label for="email">Tu Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Escribe tu email">
+
+                <label for="mensaje">Tu Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu inquietud"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Eventos -->
+        <section id="eventos">
+            <h2>Próximos Eventos</h2>
+            <ul>
+                <li>Evento 1: Reunión sobre temas de comunidad - 15 de Febrero 2025</li>
+                <li>Evento 2: Encuentro para escuchar propuestas ciudadanas - 22 de Febrero 2025</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 La Libertad Avanza - Carcaraña | Todos los derechos reservados</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
