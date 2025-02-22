@@ -3,31 +3,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
     line-height: 1.6;
+    color: #333;
 }
 
-header {
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+nav {
     background-color: #333;
     color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
+    padding: 1rem;
 }
 
 nav ul {
-    list-style-type: none;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    list-style-type: none;
 }
 
 nav ul li {
@@ -36,167 +35,76 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    font-size: 1.2rem;
-    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #007BFF;
-}
-
-/* Sección de Inicio */
-#inicio {
-    text-align: center;
-    padding: 50px 0;
-}
-
-#inicio .image-container img {
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
-}
-
-#inicio .intro-text {
-    margin-top: 20px;
-}
-
-#inicio .intro-text p {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-#inicio .intro-text .button {
-    display: inline-block;
-    background-color: #007BFF;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-}
-
-#inicio .intro-text .button:hover {
-    background-color: #0056b3;
-}
-
-/* Sección Acerca de */
-#acerca-de {
-    background-color: #fff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#acerca-de h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#acerca-de p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-/* Sección de Reclamo */
-#reclamo {
-    background-color: #fff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#reclamo form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#reclamo form label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
-#reclamo form input,
-#reclamo form textarea,
-#reclamo form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-}
-
-#reclamo form button {
-    background-color: #333;
-    color: white;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#reclamo form button:hover {
     background-color: #555;
 }
 
-/* Sección de Contacto */
-#contacto {
-    background-color: #fff;
-    padding: 50px 20px;
+/* Secciones */
+.section {
+    padding: 2rem;
     text-align: center;
 }
 
-#contacto h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+#inicio {
+    background-color: #f4f4f4;
 }
 
-#contacto p {
-    font-size: 1.2rem;
-    line-height: 1.8;
+#inicio .cta {
+    margin-top: 1rem;
 }
 
-#contacto .redes {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-#contacto .redes a {
-    margin: 0 15px;
-    text-decoration: none;
+#inicio .cta p {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#inicio .button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+#inicio .button:hover {
+    background-color: #555;
+}
+
+/* Sección Contacto */
+.social-links {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+
+.social-links a {
+    margin: 10px 0;
+    font-size: 1.1rem;
     color: #333;
+    transition: color 0.3s;
 }
 
-#contacto .redes a:hover {
-    color: #007BFF;
+.social-links a:hover {
+    color: #555;
 }
 
-/* Pie de página */
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+    padding: 1rem;
 }
 
 footer p {
     font-size: 1rem;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #007BFF;
 }
