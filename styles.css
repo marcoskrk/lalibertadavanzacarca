@@ -1,162 +1,162 @@
+/* Estilo básico de la página */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Menú y hamburguesa */
-.navbar {
+/* Barra de navegación */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     background-color: #333;
-    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
 }
 
+/* Logo */
 .logo {
     color: white;
     font-size: 1.5rem;
 }
 
-/* Estilo para el botón hamburguesa */
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    margin-right: 20px; /* Aquí le damos un margen para separarlo de la esquina */
-}
-
-.menu-toggle {
-        display: block;
-    }
-
-.menu-toggle .bar {
-    width: 25px;
-    height: 4px;
-    background-color: white;
-    margin: 4px 0;
-}
-
+/* Estilo del menú */
 .menu {
-    list-style-type: none;
+    list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
 
 .menu li {
-    margin: 0 10px;
+    margin-left: 20px;
 }
-    .menu li {
-        margin: 10px 0;
-    }
+
 .menu a {
-    text-decoration: none;
     color: white;
-    font-size: 16px;
-}
-.menu a {
-        font-size: 18px;
-    }
-
-
-    /* Mostrar el menú cuando el botón hamburguesa es clickeado */
-.menu.active {
-        display: flex;
-    }
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
 }
 
-/* Mostrar el botón hamburguesa en pantallas pequeñas */
-@media (max-width: 768px) {
-    .menu {
-        display: none; /* Escondemos el menú por defecto */
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #333;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
+.menu a:hover {
+    background-color: #444;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
 .bar {
     display: block;
     width: 25px;
     height: 3px;
     background-color: white;
     margin: 5px 0;
-    transition: 0.3s;
 }
 
-/* Sección Inicio */
+/* Sección de la imagen y el texto */
 #inicio {
     position: relative;
     width: 100%;
+    height: 300px;
     overflow: hidden;
-}
-
-/* Estilo para la imagen */
-.hero-image {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho */
-    height: auto; /* Ajusta la altura de la imagen de manera proporcional */
 }
 
 .hero-image img {
     width: 100%;
     height: auto;
-    display: block;
     object-fit: cover;
 }
 
-/* Estilo para el contenedor de texto */
 .hero-text {
-    text-align: center;
-    padding: 30px 20px; /* Da espacio entre la imagen y el texto, y entre el texto y el botón */
-    background-color: #f4f4f4; /* Fondo opcional para el área de texto */
-    margin-top: -10px; /* Ajusta el margen superior para que esté un poco más cerca de la imagen */
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
 }
 
-/* Estilo para el título */
-.hero-text h2 {
+.hero-text h1 {
     font-size: 2rem;
-    color: #333;
-    margin-bottom: 10px; /* Espacio debajo del título */
-}
-/* Estilo para el texto */
-.hero-text p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 20px; /* Espacio debajo del párrafo */
+    margin: 0;
 }
 
-/* Estilo para el botón */
-.btn-reclamo {
-    display: inline-block; /* Hace que el botón se quede en la misma línea */
-    margin-top: 20px; /* Añade un margen superior */
-    padding: 10px 20px;
+.hero-text p {
     font-size: 1.2rem;
+}
+/* Información debajo de la imagen */
+#info {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#info h2 {
+    font-size: 2rem;
+}
+
+#info p {
+    font-size: 1.2rem;
+}
+
+/* Estilo para el botón "reclamo" */
+.btn-reclamo {
     background-color: #333;
     color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-align: center;
+    margin-top: 20px;
+    display: inline-block;
 }
 
 .btn-reclamo:hover {
-    background-color: #45a049; /* Efecto hover */
+    background-color: #45a049;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
     padding: 20px;
-    margin-top: auto; /* Esto asegura que el footer siempre esté en la parte inferior */
+    background-color: #333;
+    color: white;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    /* Menú hamburguesa */
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        padding: 10px 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu a {
+        font-size: 1.5rem;
+    }
 }
