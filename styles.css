@@ -1,4 +1,4 @@
-/* Reset básico para un diseño limpio */
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -7,169 +7,196 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Navbar */
-nav {
+header {
     background-color: #333;
     color: white;
-    padding: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
 }
 
 nav ul {
     list-style-type: none;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
+    font-size: 1.2rem;
     text-decoration: none;
-    font-size: 18px;
 }
 
-/* Sección Inicio */
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Sección de Inicio */
 #inicio {
-    position: relative;
     text-align: center;
-    color: white;
+    padding: 50px 0;
 }
 
 #inicio .image-container img {
     width: 100%;
-    height: 500px;
-    object-fit: cover;
+    max-width: 1000px;
+    height: auto;
 }
 
-#inicio .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#inicio .intro-text {
+    margin-top: 20px;
 }
 
-#inicio p {
-    font-size: 24px;
+#inicio .intro-text p {
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
-.btn-reclamo {
-    background-color: #f44336;
+#inicio .intro-text .button {
+    display: inline-block;
+    background-color: #007BFF;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
-.btn-reclamo:hover {
-    background-color: #e53935;
+#inicio .intro-text .button:hover {
+    background-color: #0056b3;
 }
+
 /* Sección Acerca de */
 #acerca-de {
-    padding: 40px;
-    background-color: #ffffff;
+    background-color: #fff;
+    padding: 50px 20px;
     text-align: center;
 }
 
 #acerca-de h2 {
-    font-size: 30px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 #acerca-de p {
-    font-size: 18px;
-    margin-top: 20px;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
-/* Sección Reclamo */
+/* Sección de Reclamo */
 #reclamo {
-    padding: 40px;
-    background-color: #eeeeee;
-}
-
-#reclamo h2 {
+    background-color: #fff;
+    padding: 50px 20px;
     text-align: center;
-    font-size: 28px;
 }
 
 #reclamo form {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-#reclamo input,
-#reclamo textarea,
-#reclamo select {
+#reclamo form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#reclamo form input,
+#reclamo form textarea,
+#reclamo form select {
+    width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    margin-bottom: 20px;
     border-radius: 5px;
-    font-size: 16px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
 }
 
-#reclamo button {
-    background-color: #f44336;
+#reclamo form button {
+    background-color: #333;
     color: white;
-    padding: 15px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#reclamo button:hover {
-    background-color: #e53935;
+#reclamo form button:hover {
+    background-color: #555;
 }
 
-/* Sección Contacto */
+/* Sección de Contacto */
 #contacto {
-    padding: 40px;
-    background-color: #ffffff;
+    background-color: #fff;
+    padding: 50px 20px;
     text-align: center;
 }
 
 #contacto h2 {
-    font-size: 28px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
-#contacto ul {
-    list-style-type: none;
+#contacto p {
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
-#contacto ul li {
-    margin: 10px 0;
+#contacto .redes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-#contacto ul li a {
-    font-size: 18px;
+#contacto .redes a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
     color: #333;
+}
+
+#contacto .redes a:hover {
+    color: #007BFF;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: white;
     text-decoration: none;
 }
 
-#contacto ul li a:hover {
-    color: #f44336;
-}
-
-/* Footer */
-footer {
-    
-
-    footer {
-        font-size: 12px;
-    }
-}
-background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+footer a:hover {
+    color: #007BFF;
 }
