@@ -133,8 +133,6 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    margin-top: auto; /* Esto asegura que el footer siempre esté en la parte inferior */
 }
