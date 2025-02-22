@@ -3,35 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Libertad Avanza Carcarañá - Fomentar la Participación Ciudadana">
+    <meta name="keywords" content="Libertad Avanza, Carcarañá, Reclamos, Participación Ciudadana">
     <title>La Libertad Avanza Carcarañá</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="acerca-de.html">Acerca de</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-</header>
 
-    <!-- Sección de Inicio -->
-    <section id="inicio" class="section">
-        <div class="image-container">
-            <img src="imagen1.jpg" alt="Imagen representativa" />
+    <!-- Menú Desplegable -->
+    <nav class="navbar">
+        <div class="logo">La Libertad Avanza</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-        <div class="cta">
-            <p>¡Participa con nosotros para mejorar la ciudad!</p>
-            <a href="reclamo.html" class="button">Hacer un Reclamo</a>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio">
+        <div class="hero-image">
+            <img src="imagen.jpg" alt="La Libertad Avanza">
+        </div>
+        <div class="hero-text">
+            <h2>¡Fomentemos la Participación Ciudadana!</h2>
+            <button class="btn-reclamo" onclick="window.location.href='reclamo.html'">Hacer un Reclamo</button>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 La Libertad Avanza Carcarañá | Todos los derechos reservados</p>
+        <p>&copy; 2025 La Libertad Avanza - Carcarañá | Todos los derechos reservados</p>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
