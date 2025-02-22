@@ -3,86 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Libertad Avanza - Carcarañá</title>
+    <meta name="description" content="La Libertad Avanza Carcarañá - Fomentar la Participación Ciudadana">
+    <meta name="keywords" content="Libertad Avanza, Carcarañá, Reclamos, Participación Ciudadana">
+    <title>La Libertad Avanza Carcarañá</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-image">
-            <img src="imagen.jpg" alt="La Libertad Avanza - Carcarañá">
+
+    <!-- Menú Desplegable -->
+    <nav class="navbar">
+        <div class="logo">La Libertad Avanza</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-        <nav>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio">
+        <div class="hero-image">
+            <img src="imagen.jpg" alt="La Libertad Avanza">
+        </div>
+         <nav>
             <div class="menu-icon" id="menu-icon">
                 &#9776; <!-- Símbolo de menú hamburguesa -->
             </div>
             <ul id="menu">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#acerca-de">Acerca de</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <section id="inicio">
-            <h2>Bienvenidos a La Libertad Avanza - Carcarañá</h2>
-            <p>¡Tu participación es importante para mejorar nuestra ciudad!</p>
-            <a href="#reclamo" class="btn-reclamo">Hacer un Reclamo</a>
-        </section>
-
-        <section id="acerca-de">
-            <h2>Acerca de nosotros</h2>
-            <p>Somos un movimiento que busca mejorar la ciudad a través de la participación ciudadana.</p>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Contáctanos para cualquier consulta o sugerencia.</p>
-        </section>
-
-        <section id="reclamo">
-            <h2>Envía tu reclamo</h2>
-            <form>
-                <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="telefono">Teléfono:</label>
-                <input type="text" id="telefono" name="telefono" required>
-
-                <label for="barrio">Barrio:</label>
-                <input type="text" id="barrio" name="barrio" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="direccion" required>
-
-                <label for="descripcion">Descripción del reclamo:</label>
-                <textarea id="descripcion" name="descripcion" required></textarea>
-
-                <label for="categoria">Categoría del reclamo:</label>
-                <select id="categoria" name="categoria" required>
-                    <option value="basura">Recolección de basura</option>
-                    <option value="calle">Estado de la calle</option>
-                    <option value="alumbrado">Alumbrado público</option>
-                    <option value="transito">Tránsito</option>
-                    <option value="espacios">Espacios públicos</option>
-                    <option value="otros">Otros</option>
-                </select>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+        <div class="hero-text">
+            <h2>¡Fomentemos la Participación Ciudadana!</h2>
+        </div>
+        <div class="btn-container">
+            <button class="btn-reclamo" onclick="window.location.href='reclamo.html'">Hacer un Reclamo</button>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 La Libertad Avanza - Carcarañá | Todos los derechos reservados</p>
-        </footer>
+    </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
