@@ -36,24 +36,10 @@ body {
     font-size: 1rem;
 }
 
-/* Estilo del botón hamburguesa */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.menu-toggle .bar {
-    width: 30px;
-    height: 3px;
-    background-color: white;
-}
-
 /* Sección de la imagen y el texto */
 #inicio {
-    position: relative;
     text-align: center;
+    padding-top: 20px;
 }
 
 .hero-image {
@@ -63,12 +49,7 @@ body {
 }
 
 .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
 }
 
 .hero-text h2 {
@@ -90,6 +71,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px; /* Asegura que esté un poco alejado del texto */
 }
 
 .btn-reclamo:hover {
