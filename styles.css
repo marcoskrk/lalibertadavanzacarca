@@ -67,7 +67,7 @@ body {
 
 .hero-image img {
     width: 100%;
-    height: 200px; /* Ajustamos la altura */
+    height: 250px; /* Ajustamos la altura */
     object-fit: cover; /* Hace que la imagen se recorte bien sin deformarse */
 }
 
