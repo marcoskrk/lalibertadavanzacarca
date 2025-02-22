@@ -59,12 +59,12 @@ body {
 .hero-ima.hero-image {
     position: relative;
     width: 100%;
-    height: 100%; /* O el valor que se ajuste según el diseño que quieras */
+    height: 300%; /* O el valor que se ajuste según el diseño que quieras */
 }
 
 .hero-image img {
     width: 100%;
-    height: 100%; /* Ajusta la altura para que ocupe todo el contenedor */
+    height: 300%; /* Ajusta la altura para que ocupe todo el contenedor */
     object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
     object-position: center; /* Centra la imagen dentro del contenedor */
 }
