@@ -123,7 +123,7 @@ a {
     cursor: pointer;
     width: 250px; /* Ancho fijo */
     display: block;
-    margin: 40px auto; /* Centrado horizontal y espacio superior e inferior */
+    margin: 100px auto; /* Centrado horizontal y espacio superior e inferior */
 }
 
 .btn-reclamo:hover {
