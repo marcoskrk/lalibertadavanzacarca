@@ -112,7 +112,7 @@ a {
     margin: 0;
 }
 
-/* Estilos del botón */
+/* El botón estará directamente debajo de la imagen, y se centra */
 .btn-reclamo {
     background-color: #4CAF50; /* Color verde */
     color: white;
@@ -122,8 +122,8 @@ a {
     border-radius: 5px;
     cursor: pointer;
     width: 250px; /* Ancho fijo */
-    margin: 0 auto; /* Centra el botón horizontalmente */
     display: block;
+    margin: 20px auto; /* Centrado horizontal y espacio superior e inferior */
 }
 
 .btn-reclamo:hover {
