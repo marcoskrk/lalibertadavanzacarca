@@ -60,7 +60,7 @@ body {
     width: 100%;
     height: auto; /* Esto asegura que la imagen se ajuste a la altura original */
     object-fit: contain; /* Ajusta la imagen dentro del contenedor sin cortar ni distorsionar */
-    max-height: 300px; /* Puedes ajustar el valor según lo necesites */
+    max-height: 400px; /* Puedes ajustar el valor según lo necesites */
 }
 
 .hero-text {
