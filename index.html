@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="La Libertad Avanza - Participación Ciudadana">
-    <meta name="keywords" content="reclamos, participación ciudadana, Baigorria, La Libertad Avanza">
+    <meta name="description" content="La Libertad Avanza - Baigorria">
+    <meta name="keywords" content="Baigorria, Reclamos, Participación Ciudadana">
     <title>La Libertad Avanza - Baigorria</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,33 +13,33 @@
     <nav>
         <ul>
             <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#acerca-de">Acerca de</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
-    <!-- Inicio -->
+    <!-- Sección Inicio -->
     <section id="inicio">
         <div class="image-container">
-            <img src="imagen1.jpg" alt="Imagen representativa de La Libertad Avanza">
+            <img src="imagen1.jpg" alt="Baigorria Avanza">
         </div>
-        <div class="text-overlay">
-            <p>"Reconocer nuestros problemas es el primer paso para resolverlos"</p>
+        <div class="intro-text">
+            <p>"Juntos podemos mejorar nuestra ciudad"</p>
+<a href="#reclamo" class="button">Hacer un Reclamo</a>
         </div>
-        <a href="#reclamo" class="btn-reclamo">Hacer un Reclamo</a>
     </section>
 
-    <!-- Acerca de -->
-    <section id="acerca-de">
+    <!-- Sección Acerca de -->
+    <section id="acerca">
         <h2>Acerca de</h2>
-        <p>La Libertad Avanza Baigorria es un movimiento que fomenta la participación activa de los ciudadanos para mejorar la calidad de vida en nuestra comunidad.</p>
+        <p>Somos una iniciativa de la comunidad para fomentar la participación y mejorar la calidad de vida de los ciudadanos de Baigorria.</p>
     </section>
 
-    <!-- Reclamo -->
+    <!-- Sección de Reclamo -->
     <section id="reclamo">
-        <h2>Envía tu reclamo</h2>
+        <h2>Envía tu Reclamo</h2>
         <p>Desde La Libertad Avanza Baigorria queremos fomentar la participación ciudadana. Ayúdanos a mejorar la ciudad porque reconocer nuestros problemas es el primer paso para resolverlos.</p>
-        <form action="submit_reclamo.php" method="POST">
+        <form action="mailto:tuemail@dominio.com" method="post" enctype="text/plain">
             <label for="nombre">Nombre Completo:</label>
             <input type="text" id="nombre" name="nombre" required>
 
@@ -53,18 +53,18 @@
             <input type="email" id="email" name="email" required>
 
             <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" name="direccion" required>
+<input type="text" id="direccion" name="direccion" required>
 
             <label for="descripcion">Descripción del Reclamo:</label>
-            <textarea id="descripcion" name="descripcion" required></textarea>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
 
             <label for="categoria">Categoría del Reclamo:</label>
-            <select id="categoria" name="categoria" required>
-                <option value="recoleccion_basura">Recolección de Basura</option>
-                <option value="estado_calle">Estado de la Calle</option>
-                <option value="alumbrado_publico">Alumbrado Público</option>
+            <select id="categoria" name="categoria">
+                <option value="recoleccion">Recolección de Basura</option>
+                <option value="calles">Estado de las Calles</option>
+                <option value="alumbrado">Alumbrado Público</option>
                 <option value="transito">Tránsito</option>
-                <option value="espacios_publicos">Espacios Públicos</option>
+                <option value="espacios">Espacios Públicos</option>
                 <option value="otros">Otros</option>
             </select>
 
@@ -72,19 +72,19 @@
         </form>
     </section>
 
-    <!-- Contacto -->
+    <!-- Sección Contacto -->
     <section id="contacto">
         <h2>Contacto</h2>
         <ul>
             <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
             <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-            <li><a href="https://wa.me/yourphonenumber" target="_blank">WhatsApp</a></li>
+            <li><a href="https://wa.me/1234567890" target="_blank">WhatsApp</a></li>
         </ul>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 La Libertad Avanza - Todos los derechos reservados</p>
+        <p>&copy; 2025 La Libertad Avanza - Baigorria | Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
