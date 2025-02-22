@@ -8,6 +8,9 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
 }
 
 /* Menú Desplegable */
@@ -84,9 +87,8 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    margin-top: auto; /* Esto asegura que el pie de página esté siempre al final */
 }
 
 /* Media Query para pantallas pequeñas (dispositivos móviles) */
@@ -99,7 +101,6 @@ footer {
         background-color: #333;
         padding-top: 20px;
     }
-
     .menu li a {
         padding: 10px;
         text-align: center;
