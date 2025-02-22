@@ -58,16 +58,16 @@ body {
 
 .hero-image {
     position: relative;
-    width: 100%; /* 100% del ancho del contenedor */
-    height: 100vh; /* 100% de la altura de la ventana, ajustable */
-    overflow: hidden;
+    width: 100%; /* La imagen ocupa todo el ancho */
+    height: 40vh; /* Ajustamos la altura a 40% de la altura de la ventana */
+    overflow: hidden; /* Evita que la imagen se desborde */
 }
 
 .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: 100%; /* La imagen ocupa toda la altura del contenedor */
+    object-fit: cover; /* La imagen se ajusta al contenedor, pero sin distorsionarse */
+    object-position: center; /* Centra la imagen */
 }
 
 .hero-text {
