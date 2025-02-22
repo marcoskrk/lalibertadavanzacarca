@@ -1,18 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="La Libertad Avanza - Baigorria">
-    <meta name="keywords" content="Baigorria, Reclamos, Participación Ciudadana">
-    <title>Inicio - La Libertad Avanza</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="inicio.html">Inicio</a></li>
-            <li><a href="acerca.html">Acerca de</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+   <html lang="es">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta name="description" content="La Libertad Avanza - Página de reclamos y contacto">
+       <title>La Libertad Avanza</title>
+       <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+       <header>
+           <h1>La Libertad Avanza</h1>
+       </header>
+       <section id="inicio">
+           <div class="image-container">
+               <img src="image.jpg" alt="Imagen representativa">
+           </div>
+           <div class="intro-text">
+               <p>Tu voz importa</p>
+               <a href="#reclamo" class="button">Hacer un Reclamo</a>
+</div>
+       </section>
+       <section id="acerca-de">
+           <h2>Acerca de</h2>
+           <p>Información sobre La Libertad Avanza.</p>
+       </section>
+       <section id="reclamo">
+           <h2>Envía tu Reclamo</h2>
+           <form action="" method="POST">
+               <label for="nombre">Nombre Completo:</label>
+               <input type="text" id="nombre" name="nombre" required>
+               <label for="telefono">Teléfono:</label>
+               <input type="tel" id="telefono" name="telefono" required>
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required>
+               <label for="reclamo">Descripción del Reclamo:</label>
+               <textarea id="reclamo" name="reclamo" required></textarea>
+               <button type="submit">Enviar</button>
+           </form>
+       </section>
+       <section id="contacto">
+           <h2>Contacto</h2>
+           <p>Visítanos en nuestras redes sociales:</p>
+           <div class="redes">
+               <a href="https://facebook.com">Facebook</a>
+               <a href="https://instagram.com">Instagram</a>
+               <a href="https://whatsapp.com">WhatsApp</a>
+           </div>
+       </section>
+       <footer>
+<p>&copy; 2025 La Libertad Avanza | Todos los derechos reservados</p>
+       </footer>
+   </body>
+   </html>
