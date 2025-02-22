@@ -98,13 +98,10 @@ a {
     object-fit: cover;
 }
 
+/* Estilo para el texto */
 .hero-text {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white;
+    margin-top: 20px; /* Separación entre la imagen y el texto */
+    margin-bottom: 30px; /* Separación entre el texto y el botón */
 }
 
 .hero-text h2 {
@@ -112,18 +109,18 @@ a {
     margin: 0;
 }
 
-/* El botón estará directamente debajo de la imagen, y se centra */
+/* Estilo para el botón */
 .btn-reclamo {
-    background-color: #4CAF50; /* Color verde */
+    margin-top: 20px; /* Añadir un margen superior para separar el botón del texto */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #333;
     color: white;
-    padding: 15px 32px;
-    font-size: 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 250px; /* Ancho fijo */
-    display: block;
-    margin: 100px auto; /* Centrado horizontal y espacio superior e inferior */
+    display: inline-block; /* Para que se ajuste en una línea centrada */
+    text-align: center;
 }
 
 .btn-reclamo:hover {
