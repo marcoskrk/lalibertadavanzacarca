@@ -1,5 +1,8 @@
-// Código JavaScript para mostrar/ocultar el menú al hacer clic en el botón hamburguesa
-document.getElementById('menu-toggle').addEventListener("click", function() {
-    const menu = document.getElementById('menu');
-    menu.classList.toggle('show');
+// Obtener los elementos necesarios
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+// Agregar el evento para mostrar u ocultar el menú cuando se haga clic en el botón hamburguesa
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
 });
