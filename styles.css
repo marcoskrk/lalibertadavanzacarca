@@ -43,31 +43,48 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #555;
 }
-
-/* Secciones */
-.section {
+/* Sección Reclamo */
+#reclamo {
     padding: 2rem;
     text-align: center;
 }
 
-#inicio {
+#reclamo form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
     background-color: #f4f4f4;
+    border-radius: 8px;
 }
 
-#inicio .cta {
-    margin-top: 1rem;
+#reclamo form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
 }
 
-#inicio .cta p {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+#reclamo form input,
+#reclamo form select,
+#reclamo form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-#inicio .button {
-    padding: 10px 20px;
+#reclamo form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+#reclamo form button {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
     background-color: #333;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -75,26 +92,8 @@ nav ul li a:hover {
     transition: background-color 0.3s;
 }
 
-#inicio .button:hover {
+#reclamo form button:hover {
     background-color: #555;
-}
-
-/* Sección Contacto */
-.social-links {
-    display: flex;
-    flex-direction: column;
-align-items: center;
-}
-
-.social-links a {
-    margin: 10px 0;
-    font-size: 1.1rem;
-    color: #333;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #555;
 }
 
 /* Footer */
