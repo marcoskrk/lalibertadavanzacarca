@@ -1,161 +1,175 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico para un diseño limpio */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
 
-h1, h2 {
-    color: #1a73e8;
+/* Navbar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px;
 }
 
-/* Header */
-header {
+nav ul {
+    list-style-type: none;
     text-align: center;
-    position: relative;
 }
 
-header .header-image {
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Sección Inicio */
+#inicio {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#inicio .image-container img {
     width: 100%;
-    height: auto;
+    height: 500px;
+    object-fit: cover;
+}
+
+#inicio .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#inicio p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-reclamo {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn-reclamo:hover {
+    background-color: #e53935;
+}
+/* Sección Acerca de */
+#acerca-de {
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#acerca-de h2 {
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
-header .header-image img {
-    width: 100%;
-    height: auto;
-    max-width: 1280px; /* Ajuste para mantener la imagen proporcional */
+#acerca-de p {
+    font-size: 18px;
+    margin-top: 20px;
 }
 
-header nav {
-    background-color: #333;
-    color: white;
-    padding: 1em;
+/* Sección Reclamo */
+#reclamo {
+    padding: 40px;
+    background-color: #eeeeee;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+#reclamo h2 {
+    text-align: center;
+    font-size: 28px;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
+#reclamo form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-font-weight: bold;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Main Content */
-main {
-    padding: 2em;
-}
-
-section {
-    margin-bottom: 2em;
-}
-
-/* Form Styling */
-section#inquietudes input, section#inquietudes textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin: 0.5em 0;
-    border-radius: 5px;
+#reclamo input,
+#reclamo textarea,
+#reclamo select {
+    padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-section#inquietudes button {
-    padding: 1em;
-    background-color: #1a73e8;
+#reclamo button {
+    background-color: #f44336;
     color: white;
+    padding: 15px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    font-size: 18px;
 }
 
-section#inquietudes button:hover {
-    background-color: #155bb5;
+#reclamo button:hover {
+    background-color: #e53935;
 }
 
-/* Section Titles */
-h2 {
-    font-size: 24px;
+/* Sección Contacto */
+#contacto {
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#contacto ul {
+    list-style-type: none;
+}
+
+#contacto ul li {
+    margin: 10px 0;
+}
+
+#contacto ul li a {
+    font-size: 18px;
     color: #333;
-    margin-bottom: 0.5em;
+    text-decoration: none;
 }
 
-/* Paragraphs */
-p {
-    font-size: 16px;
-    color: #555;
-}
-
-/* Spacing adjustments */
-section#inquietudes p, section#eventos p {
-    margin-bottom: 1.5em;
+#contacto ul li a:hover {
+    color: #f44336;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    section#inquietudes, section#eventos {
-        padding: 1em;
-    }
-
-    h1 {
-font-size: 28px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    p, ul li {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    header nav ul li {
-        font-size: 14px;
-    }
-
-    section#inquietudes input, section#inquietudes textarea {
-        padding: 0.8em;
-    }
+    
 
     footer {
         font-size: 12px;
     }
+}
+background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
