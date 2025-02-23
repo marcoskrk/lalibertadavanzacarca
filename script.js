@@ -1,7 +1,9 @@
-// Activar el menú al hacer clic en el botón hamburguesa
-const menuToggle = document.getElementById('menu-Toggle');
-const menu = document.getElementById('menu');
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
 
-menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('active');
+    // Cuando se haga clic en el botón hamburguesa
+    menuToggle.addEventListener('click', function () {
+        menu.classList.toggle('active'); // Alternamos la clase "active" para mostrar/ocultar el menú
+    });
 });
