@@ -69,6 +69,12 @@ body {
     text-align: center;
     color: white;
 }
+/* la imagen está en un contenedor */
+#inicio img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Hace que la imagen se ajuste al contenedor sin distorsionarse */
+}
 
 #inicio h1 {
     font-size: 3rem;
@@ -226,11 +232,11 @@ footer {
 
     #contacto-redes {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
     }
 
     #contacto-redes a {
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
     }
 }
