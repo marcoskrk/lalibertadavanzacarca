@@ -7,14 +7,30 @@
     <meta name="keywords" content="Formulario, Reclamo, Participación Ciudadana">
     <title>Formulario de Reclamo</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    </head>
 <body>
 
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="logo">La Libertad Avanza Carcarañá</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección del formulario de reclamo -->
     <section id="formulario">
         <h2>Envía tu Reclamo</h2>
-        <p>Desde La Libertad Avanza Carcarañá queremos fomentar la participación ciudadana. Ayúdanos a mejorar la ciudad porque reconocer nuestros problemas es el primer paso para resolverlos.</p>
+        <p>Ayúdanos a mejorar nuestra ciudad. Completa el formulario para reportar cualquier problema.</p>
 
-        <!-- Formulario dentro de un recuadro -->
+        <!-- Formulario -->
         <form action="#" method="post" class="form-container">
             <div class="form-row">
                 <div class="form-column">
@@ -25,8 +41,9 @@
                     <input type="tel" id="telefono" name="telefono" required>
 
                     <label for="barrio">Barrio</label>
-                    <input type="text" id="barrio" name="barrio" required>
-
+                    
+    <input type="text" id="barrio" name="barrio" required>
+                    
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
@@ -51,13 +68,15 @@
                     <button type="submit">Enviar Reclamo</button>
                 </div>
             </div>
-        </form>
+            </form>
     </section>
 
     <!-- Footer fijo -->
     <footer>
         <p>&copy; 2025 La Libertad Avanza - Carcarañá | Todos los derechos reservados</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
