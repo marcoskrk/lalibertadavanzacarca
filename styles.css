@@ -1,8 +1,8 @@
 /* Estilos generales para el cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
+    display: flixed;
+    flex-direction: flixed;
     min-height: 100vh;
 }
 
@@ -157,7 +157,7 @@ button:hover {
 footer {
     position: fixed;
     left: 0;
-    bottom: 10;
+    bottom: 0;
     width: 100%;
     text-align: center;
     background-color: #333;
