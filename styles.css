@@ -143,16 +143,15 @@ textarea {
 
 /* Botón */
 button {
-    background-color: #333;
+    background-color: #800080;
     color: white;
-    padding: 15px 15px;
+    padding: 15px 30px; /* Aumenté el padding para hacerlo más cómodo */
     font-size: 1.2rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 30%;
-    transition: background-color 0.3s;
-}
+    width: 50%; /* O auto o un porcentaje mayor si quieres */
+    max-width: 300px; /* Opcional, para evitar que se haga demasiado grande */
 
 button:hover {
     background-color: #45a049;
