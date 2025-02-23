@@ -1,11 +1,84 @@
-/* Estilo básico de la página */
+/* Estilos generales para el cuerpo de la página */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    padding-bottom: 60px; /* Para evitar que el footer quede encima del contenido */
+    margin: 0;
+    padding: 0;
 }
 
-/* Contenedor del formulario */
+/* Estilos del menú de navegación */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .menu li {
+    margin: 0 15px;
+}
+
+.navbar .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar .menu li a:hover {
+    background-color: #555;
+}
+
+.navbar .menu-toggle {
+    display: none; /* Ocultamos el botón hamburguesa por defecto */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+/* Estilos responsivos para el menú */
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none; /* Ocultamos el menú en pantallas pequeñas */
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .menu li {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .navbar .menu-toggle {
+        display: flex; /* Mostramos el botón hamburguesa */
+    }
+
+    .navbar.active .menu {
+        display: block; /* Mostramos el menú cuando el botón hamburguesa es activado */
+    }
+}
+
+/* Estilos del formulario de reclamo */
 #formulario {
     max-width: 900px;
     margin: 50px auto;
@@ -15,7 +88,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Encabezado y descripción */
 #formulario h2 {
     text-align: center;
     font-size: 2rem;
