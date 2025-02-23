@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    padding-bottom: 60px; /* O el tamaño que prefieras, dependiendo del tamaño del pie de página */
 }
 
 /* Menú de Navegación */
