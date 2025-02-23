@@ -20,7 +20,17 @@ a {
     align-items: center;
     position: relative;
 }
-
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    position: absolute;
+    top: 60px; /* Ajusta según la altura de la barra de navegación */
+    right: 0;
+    width: 100%;
+    display: none; /* El menú está oculto por defecto */
+}
 .navbar .logo {
     color: white;
     font-size: 1.5rem;
@@ -35,6 +45,48 @@ a {
 
 .navbar .menu li {
     margin: 0 15px;
+}
+/* Estilo para los enlaces dentro del menú */
+.menu li {
+    border-bottom: 1px solid #ccc;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+}
+
+/* Estilo para el botón hamburguesa */
+.menu-toggle {
+    display: none; /* Ocultar el botón hamburguesa en pantallas grandes */
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+
+/* Mostrar el botón hamburguesa solo en pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostrar el botón hamburguesa */
+    }
+
+    /* Mostrar el menú cuando la clase "active" esté presente */
+    .menu.active {
+        display: block;
+    }
 }
 
 .navbar .menu li a {
@@ -222,53 +274,4 @@ header nav ul li a {
 
 header nav ul li a:hover {
     text-decoration: underline;
-}
-
-/* Sección Acerca de */
-#acerca-de {
-    background-color: #f9f9f9;
-    padding: 40px;
-    text-align: center;
-    margin: 20px 0;
-    border-radius: 8px;
-}
-
-#acerca-de h2 {
-    color: #333;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#acerca-de p {
-    color: #666;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-/* Estilo para el Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 1rem;
-    margin: 0;
-}
-/* Asegurarse de que el pie de página siempre quede al fondo */
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    margin-top: auto;
 }
