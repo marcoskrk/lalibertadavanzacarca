@@ -157,7 +157,7 @@ button:hover {
 footer {
     position: fixed;
     left: 0;
-    bottom: 30;
+    bottom: 10;
     width: 100%;
     text-align: center;
     background-color: #333;
