@@ -141,36 +141,33 @@ textarea {
     resize: vertical;
 }
 
-/* Botón */
-button {
-    background-color: #6a1b9a; /* Color morado */
+/* Botón de reclamo */
+.btn-reclamo {
+    background-color: #6a1b9a; /* Color morado */;
     color: white;
-    padding: 15px 30px;
+    padding: 15px 30px; /* Ajusta el tamaño del botón */
     font-size: 1.2rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 50%;
-    max-width: 300px;
-    margin: 10px auto;
-    display: block;
-    transition: background-color 0.3s; /* Transición solo para el cambio de color */
+    width: 50%; /* Puedes ajustar el ancho si lo deseas */
+    max-width: 300px; /* Evita que el botón se haga demasiado grande */
+    display: block; /* Lo hace un bloque para que ocupe toda la línea */
+    margin: 20px auto; /* Centrado y un margen superior e inferior */
 }
 
 button:hover {
     background-color: #9c4dcc; /* Tono más claro de morado cuando pasa el puntero */
 }
 
-/* Footer fijo */
+/* Pie de página */
 footer {
-    background-color: #333; /* Fondo negro */
-    color: white; /* Letras blancas */
-    text-align: center; /* Centrado del texto */
-    padding: 3px; /* Espaciado para hacerlo más visible */
-    position: fixed; /* Fijo en la parte inferior */
-    bottom: 0; /* Lo coloca en la parte inferior */
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    left: 0; /* Asegura que se alinee con el borde izquierdo */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px; /* Espaciado alrededor del pie */
+    margin-top: 40px; /* Esto crea espacio entre el contenido y el pie */
+    position: relative; /* Asegura que el pie no se solape */
 }
 
 /* Responsividad para dispositivos móviles */
