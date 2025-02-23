@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%; /* Asegura que el body ocupe toda la altura de la pantalla */
-    overflow: hidden; /* Elimina el scroll */
+    
 }
 
 a {
