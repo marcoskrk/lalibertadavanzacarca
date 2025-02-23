@@ -365,16 +365,7 @@ footer {
 }
 
 
----
 
-*JavaScript (script.js)*
-
-javascript
-// JavaScript para el botón hamburguesa
-document.getElementById('menu-toggle').addEventListener('click', function() {
-    var menu = document.getElementById('menu');
-    menu.classList.toggle('active');
-});
 
 
 /* estilo general CONTACTO */
@@ -514,12 +505,3 @@ footer {
     }
 }
 
-
-*JavaScript (script.js)*
-
-javascript
-// JavaScript para el botón hamburguesa
-document.getElementById('menu-toggle').addEventListener('click', function() {
-    var menu = document.getElementById('menu');
-    menu.classList.toggle('active');
-});
