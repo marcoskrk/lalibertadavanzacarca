@@ -171,7 +171,7 @@ footer {
     bottom: 0; /* Lo coloca en la parte inferior */
     width: 100%; /* Ocupa todo el ancho de la pantalla */
     left: 0; /* Asegura que se alinee con el borde izquierdo */
-    z-index: 1000; /* Asegura que se quede encima de otros elementos */
+    
 }
 
 /* Responsividad para dispositivos móviles */
