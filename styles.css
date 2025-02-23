@@ -11,7 +11,7 @@ a {
     color: inherit;
 }
 
-/* Estilos para el menú de navegación */
+/* Estilos generales para el navbar */
 .navbar {
     background-color: #333;
     padding: 10px;
@@ -25,16 +25,16 @@ a {
     font-size: 24px;
 }
 
-/* Estilos para el menú (los enlaces) */
+/* Estilo para el menú */
 .menu {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; /* Mostrar el menú como una fila en pantallas grandes */
 }
 
 .menu li {
-    margin-right: 20px;
+    margin-right: 20px; /* Separación entre los elementos */
 }
 
 .menu li a {
@@ -45,12 +45,12 @@ a {
 }
 
 .menu li a:hover {
-    background-color: #555;
+    background-color: #555; /* Cambio de fondo al pasar el ratón */
 }
 
 /* Estilo para el botón hamburguesa */
 .menu-toggle {
-    display: none; /* Ocultar el botón hamburguesa por defecto */
+    display: none; /* Ocultar el botón hamburguesa en pantallas grandes */
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -64,17 +64,25 @@ a {
     background-color: white;
 }
 
-/* Cuando la pantalla es pequeña, mostrar el botón hamburguesa y ocultar el menú */
+/* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
+    /* Ocultar el menú por defecto en pantallas pequeñas */
     .menu {
-        display: none; /* Ocultar el menú en pantallas pequeñas */
+        display: none;
         flex-direction: column;
         width: 100%;
+        background-color: #333; /* Fondo del menú desplegado */
+        position: absolute;
+        top: 60px; /* Separación desde la parte superior */
+        left: 0;
+        padding: 20px;
+        margin: 0;
     }
 
     .menu li {
-        width: 100%;
+        width: 100%; /* Aseguramos que cada elemento ocupe el 100% */
         text-align: center;
+        padding: 10px;
         border-top: 1px solid #444;
     }
 
@@ -83,32 +91,20 @@ a {
         display: block;
     }
 
-    /* Cuando el menú tenga la clase "active", mostrarlo */
+    /* Cuando el menú tenga la clase 'active', mostrarlo */
     .menu.active {
         display: block;
     }
 }
 
-
-/* Estilos responsivos para el menú */
-@media (max-width: 768px) {
-    .navbar .menu {
-        display: none; /* Ocultamos el menú en pantallas pequeñas */
-        width: 100%;
-        text-align: center;
+/* Mejorar el tamaño y espacio en pantallas grandes */
+@media (min-width: 769px) {
+    .menu {
+        display: flex; /* Menú en fila en pantallas grandes */
     }
 
-    .navbar .menu li {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .navbar .menu-toggle {
-        display: flex; /* Mostramos el botón hamburguesa */
-    }
-
-    .navbar.active .menu {
-        display: block; /* Mostramos el menú cuando el botón hamburguesa es activado */
+    .menu li {
+        margin-right: 20px;
     }
 }
 
