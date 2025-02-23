@@ -3,73 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulario de Reclamo">
-    <meta name="keywords" content="Formulario, Reclamo, Participación Ciudadana">
-    <title>Formulario de Reclamo</title>
+    <meta name="description" content="La Libertad Avanza Carcarañá - Fomentar la Participación Ciudadana">
+    <meta name="keywords" content="Libertad Avanza, Carcarañá, Reclamos, Participación Ciudadana">
+    <title>La Libertad Avanza Carcarañá</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Menú de navegación -->
+    <!-- Menú Desplegable -->
     <nav class="navbar">
-        <div class="logo">La Libertad Avanza Carcarañá</div>
+        <div class="logo">La Libertad Avanza</div>
         <div class="menu-toggle" id="menu-toggle">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-<ul class="menu" id="menu">
+        <ul class="menu" id="menu">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="acerca.html">Acerca de</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
 
-    <!-- Sección del formulario de reclamo -->
-    <section id="formulario">
-        <h2>Envía tu Reclamo</h2>
-        <p>Desde La Libertad Avanza Carcarañá queremos fomentar la participación ciudadana. Ayúdanos a mejorar la ciudad porque reconocer nuestros problemas es el primer paso para resolverlos.</p>
-
-        <!-- Formulario dentro de un recuadro -->
-        <form action="#" method="post" class="form-container">
-            <div class="form-row">
-                <div class="form-column">
-                    <label for="nombre">Nombre Completo</label>
-                    <input type="text" id="nombre" name="nombre" required>
-
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" required>
-
-                    <label for="barrio">Barrio</label>
-                    <input type="text" id="barrio" name="barrio" required>
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-    <div class="form-column">
-                    <label for="direccion">Dirección</label>
-                    <input type="text" id="direccion" name="direccion" required>
-
-                    <label for="descripcion">Descripción del Reclamo</label>
-                    <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
-
-                    <label for="categoria">Categoría del Reclamo</label>
-                    <select id="categoria" name="categoria" required>
-                        <option value="alumbrado">Alumbrado Público</option>
-                        <option value="calle">Estados de Calle</option>
-                        <option value="basura">Recolección de Basura</option>
-                        <option value="espacios">Espacios Públicos</option>
-                        <option value="transito">Tránsito</option>
-                        <option value="otros">Otros</option>
-                    </select>
-
-                    <button type="submit">Enviar Reclamo</button>
-                </div>
-            </div>
-        </form>
+    <!-- Sección de Imagen con Título -->
+    <section id="inicio">
+        <div class="hero-image">
+            <img src="imagen.jpg" alt="La Libertad Avanza Carcarañá">
+        </div>
+        <div class="hero-text">
+            <h1>La Libertad Avanza Carcarañá</h1>
+            <p>Fomentamos la participación ciudadana para mejorar la calidad de vida de nuestra comunidad.</p>
+        </div>
     </section>
 
-    <!-- Footer fijo -->
+    <!-- Información debajo de la foto -->
+    <section id="info">
+        <h2>¡Fomentemos la Participación Ciudadana!</h2>
+        <p>Ayúdanos a identificar los problemas que afectan nuestra ciudad y a mejorarla.</p>
+        <button class="btn-reclamo" onclick="window.location.href='reclamo.html'">Hacer un Reclamo</button>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 La Libertad Avanza - Carcarañá | Todos los derechos reservados</p>
     </footer>
