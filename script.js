@@ -1,9 +1,11 @@
+// Esperamos que el documento esté completamente cargado
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');
 
-    // Cuando se haga clic en el botón hamburguesa
+    // Al hacer clic en el botón hamburguesa
     menuToggle.addEventListener('click', function () {
-        menu.classList.toggle('active'); // Alternamos la clase "active" para mostrar/ocultar el menú
+        // Alternar la clase "active" para mostrar/ocultar el menú
+        menu.classList.toggle('active');
     });
 });
