@@ -1,3 +1,147 @@
+/* Estilos solo inicio */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el menú */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+#navbar .logo {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#navbar .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar .menu li {
+    margin: 0 15px;
+}
+
+#navbar .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Sección "Inicio" */
+#inicio {
+    position: relative;
+    text-align: center;
+}
+
+#hero-image {
+    position: relative;
+}
+
+#hero-img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+#hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 10;
+}
+
+#hero-text h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+#hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#btn-reclamo {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+#btn-reclamo:hover {
+    background-color: #555;
+}
+
+/* Estilo del pie de página */
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    #navbar .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-toggle {
+        display: flex;
+    }
+
+    #navbar .menu.active {
+        display: flex;
+    }
+
+    #hero-text h2 {
+        font-size: 1.5rem;
+    }
+
+    #hero-text p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
 /* Estilos generales para el cuerpo de la página */
 body {
     margin: 0;
@@ -343,7 +487,7 @@ footer {
 }
 
 /* Responsividad para el menú hamburguesa */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) {
     .menu {
         display: none;
         width: 100%;
