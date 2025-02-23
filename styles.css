@@ -157,8 +157,8 @@ button:hover {
 footer {
     position: fixed;
     left: 0;
-    bottom: 0;
-    width: 30%;
+    bottom: 30;
+    width: 100%;
     text-align: center;
     background-color: #333;
     color: white;
@@ -166,7 +166,7 @@ footer {
 }
 
 /* Responsividad para dispositivos móviles */
-@media (max-width: 500px) {
+@media (max-width: 300px) {
     .form-row {
         flex-direction: column;
     }
