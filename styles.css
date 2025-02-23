@@ -1,9 +1,9 @@
 /* Estilos generales para el cuerpo de la página */
-body {
-    font-family: Arial, sans-serif;
+ body {
+    height: 100%;  /* Necesario para usar flexbox */
+    margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 a {
@@ -163,8 +163,8 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 5px 10px; /* Reduce el valor del padding */
-    width: 100%;
+    padding: 10px;
+    margin-top: auto; /* Empuja el pie de página hacia abajo */
 }
 
 /* Responsividad para dispositivos móviles */
