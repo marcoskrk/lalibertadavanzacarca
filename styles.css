@@ -118,9 +118,32 @@ body {
     margin: 20px auto;
 }
 
-/* Estilos de la sección "Contacto" */
+/* Estilos del formulario de reclamo */
+#formulario {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+#formulario h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#formulario p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
 /* Diseño en dos columnas */
-#contacto {
 .form-row {
     display: flex;
     flex-wrap: wrap;
