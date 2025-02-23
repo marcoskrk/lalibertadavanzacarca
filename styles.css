@@ -240,3 +240,24 @@ footer {
         height: 20px;
     }
 }
+
+#inicio img {
+    width: 100%;
+    height: auto;
+}
+
+/* En pantallas más pequeñas */
+@media (max-width: 768px) {
+    #inicio img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* En pantallas grandes */
+@media (min-width: 1024px) {
+    #inicio img {
+        width: 100%;
+        max-height: 600px; /* Ajusta la altura máxima para pantallas grandes */
+    }
+}
