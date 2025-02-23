@@ -14,41 +14,50 @@
         <h2>Envía tu Reclamo</h2>
         <p>Desde La Libertad Avanza Carcarañá queremos fomentar la participación ciudadana. Ayúdanos a mejorar la ciudad porque reconocer nuestros problemas es el primer paso para resolverlos.</p>
 
-        <form action="#" method="post">
-            <label for="nombre">Nombre Completo</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" required>
+        <!-- Formulario dentro de un recuadro -->
+        <form action="#" method="post" class="form-container">
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
 
-            <label for="barrio">Barrio</label>
-            <input type="text" id="barrio" name="barrio" required>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+                    <label for="barrio">Barrio</label>
+                    <input type="text" id="barrio" name="barrio" required>
 
-            <label for="direccion">Dirección</label>
-            <input type="text" id="direccion" name="direccion" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <label for="descripcion">Descripción del Reclamo</label>
-            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+                <div class="form-column">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" required>
 
-            <label for="categoria">Categoría del Reclamo</label>
-            <select id="categoria" name="categoria" required>
-                <option value="alumbrado">Alumbrado Público</option>
-                <option value="calle">Estados de Calle</option>
-                <option value="basura">Recolección de Basura</option>
-                <option value="espacios">Espacios Públicos</option>
-                <option value="transito">Tránsito</option>
-                <option value="otros">Otros</option>
-            </select>
+                    <label for="descripcion">Descripción del Reclamo</label>
+                    <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
 
-            <button type="submit">Enviar Reclamo</button>
+                    <label for="categoria">Categoría del Reclamo</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="alumbrado">Alumbrado Público</option>
+                        <option value="calle">Estados de Calle</option>
+                        <option value="basura">Recolección de Basura</option>
+                        <option value="espacios">Espacios Públicos</option>
+                        <option value="transito">Tránsito</option>
+                        <option value="otros">Otros</option>
+                    </select>
+
+                    <button type="submit">Enviar Reclamo</button>
+                </div>
+            </div>
         </form>
     </section>
-    
-    <!-- Footer -->
-         <footer>
-                <p>&copy; 2025 La Libertad Avanza - Carcarañá | Todos los derechos reservados</p>
-         </footer>
+
+    <!-- Footer fijo -->
+    <footer>
+        <p>&copy; 2025 La Libertad Avanza - Carcarañá | Todos los derechos reservados</p>
+    </footer>
+
 </body>
 </html>
