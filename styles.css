@@ -1,9 +1,14 @@
 /* Estilos generales para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
+    height: 100%; /* Asegura que el body ocupe todo el alto de la pantalla */
+    margin: 0;
+    padding: 0;
+}
+
+body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    justify-content: space-between; /* Asegura que el footer esté abajo */
 }
 
 /* Estilos del menú de navegación */
@@ -155,14 +160,11 @@ button:hover {
 
 /* Footer fijo */
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
     background-color: #333;
     color: white;
+    text-align: center;
     padding: 10px;
+    width: 100%;
 }
 
 /* Responsividad para dispositivos móviles */
