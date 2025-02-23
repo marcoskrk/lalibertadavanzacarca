@@ -261,3 +261,96 @@ footer {
         max-height: 600px; /* Ajusta la altura máxima para pantallas grandes */
     }
 }
+
+
+/* Estilo base para la página de contacto */
+#contacto {
+    background-image: url('agila.jpg'); /* Imagen de fondo completa */
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen de fondo no se desplace cuando se hace scroll */
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+    color: white; /* Color de texto blanco sobre fondo oscuro */
+    padding: 60px 15px; /* Espaciado alrededor del contenido */
+    text-align: center;
+}
+
+/* Estilo para los íconos de redes sociales */
+#contacto .social-icons {
+    display: flex;
+    justify-content: center; /* Centra los íconos */
+    gap: 20px; /* Espacio entre los íconos */
+    margin-top: 40px; /* Espacio arriba de los íconos */
+}
+
+#contacto .social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo translúcido para los íconos */
+    border-radius: 50%; /* Hace que los íconos sean círculos */
+    text-align: center;
+    line-height: 50px;
+    color: #333; /* Color de los íconos */
+    font-size: 1.5rem; /* Tamaño de los íconos */
+    transition: transform 0.3s, background-color 0.3s; /* Animación al pasar el mouse */
+}
+
+#contacto .social-icons a:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al hacer hover */
+    background-color: rgba(255, 255, 255, 1); /* Fondo blanco al pasar el mouse */
+    color: #007BFF; /* Cambia el color del ícono al pasar el mouse */
+}
+
+/* Estilos para los formularios de contacto */
+#contacto form {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro y translúcido para el formulario */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+#contacto form input,
+#contacto form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
+}
+
+#contacto form textarea {
+    resize: vertical; /* Permite cambiar el tamaño vertical del textarea */
+}
+#contacto form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contacto form button:hover {
+    background-color: #0056b3; /* Cambia el fondo del botón al pasar el mouse */
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    /* Asegurarse de que los íconos se ajusten en pantallas pequeñas */
+    #contacto .social-icons {
+        gap: 15px;
+    }
+
+    #contacto form {
+        padding: 20px; /* Reducir el padding en pantallas pequeñas */
+    }
+}
