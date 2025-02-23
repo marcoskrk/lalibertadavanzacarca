@@ -162,7 +162,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Estilo del Pie de Página */
+/* Pie de Página Fijo */
 footer {
     background-color: #333;
     color: white;
@@ -170,7 +170,8 @@ footer {
     padding: 15px 0;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    width: 100%; /* Asegura que el pie ocupe toda la pantalla */    
 }
 
 /* Responsividad para móviles */
