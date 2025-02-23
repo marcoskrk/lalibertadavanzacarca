@@ -7,7 +7,7 @@
     <meta name="keywords" content="Formulario, Reclamo, Participación Ciudadana">
     <title>Formulario de Reclamo</title>
     <link rel="stylesheet" href="styles.css">
-    </head>
+</head>
 <body>
 
     <!-- Menú de navegación -->
@@ -31,7 +31,7 @@
         <p>Ayúdanos a mejorar nuestra ciudad. Completa el formulario para reportar cualquier problema.</p>
 
         <!-- Formulario -->
-        <form action="#" method="post" class="form-container">
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="form-container">
             <div class="form-row">
                 <div class="form-column">
                     <label for="nombre">Nombre Completo</label>
@@ -41,9 +41,8 @@
                     <input type="tel" id="telefono" name="telefono" required>
 
                     <label for="barrio">Barrio</label>
-                    
-    <input type="text" id="barrio" name="barrio" required>
-                    
+                    <input type="text" id="barrio" name="barrio" required>
+
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
@@ -52,10 +51,10 @@
                     <label for="direccion">Dirección</label>
                     <input type="text" id="direccion" name="direccion" required>
 
-                                        <label for="categoria">Categoría del Reclamo</label>
+                    <label for="categoria">Categoría del Reclamo</label>
                     <select id="categoria" name="categoria" required>
                         <option value="alumbrado">Alumbrado Público</option>
-                        <option value="calle">Estados de Calle</option>
+                        <option value="calle">Estado de Calle</option>
                         <option value="basura">Recolección de Basura</option>
                         <option value="espacios">Espacios Públicos</option>
                         <option value="transito">Tránsito</option>
@@ -68,7 +67,7 @@
                     <button type="submit">Enviar Reclamo</button>
                 </div>
             </div>
-            </form>
+        </form>
     </section>
 
     <!-- Footer fijo -->
@@ -77,6 +76,5 @@
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
