@@ -1,8 +1,8 @@
 /* Estilos generales para el cuerpo de la página */
-body, html {
+body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Asegura que el body ocupe toda la altura de la pantalla */
+    height: 90%; /* Asegura que el body ocupe toda la altura de la pantalla */
     
 }
 
