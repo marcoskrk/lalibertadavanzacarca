@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <!-- Menú Desplegable -->
-<nav class="navbar">
+<nav class="navbar" id="navbar">
     <div class="logo">La Libertad Avanza</div>
     <div class="menu-toggle" id="menu-toggle">
-        <!-- Tres barras para el botón hamburguesa -->
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -25,30 +25,24 @@
     </ul>
 </nav>
 
-    <!-- Sección de Imagen con Título -->
-    <section id="inicio">
-        <div class="hero-image">
-            <img src="imagen.jpg" alt="La Libertad Avanza Carcarañá">
-        </div>
-        <div class="hero-text">
-
-    </section>
-
-<!-- Sección Inicio -->
-<section id="inicio">       
+<!-- Sección de Imagen con Título -->
+<section id="inicio">
+    <div class="hero-image" id="hero-image">
+        <img src="imagen.jpg" alt="La Libertad Avanza Carcarañá" id="hero-img">
+    </div>
+    <div class="hero-text" id="hero-text">
         <h2>¡Fomentemos la Participación Ciudadana!</h2>
         <p>Desde La Libertad Avanza Carcarañá, queremos fomentar la participación ciudadana y mejorar la calidad de vida de nuestra comunidad. Ayúdanos a identificar los problemas que afectan a nuestra ciudad.</p>
-        <!-- Botón debajo del texto -->
-        <button class="btn-reclamo" onclick="window.location.href='reclamo.html'">Hacer un Reclamo</button>
+        <button class="btn-reclamo" id="btn-reclamo" onclick="window.location.href='reclamo.html'">Hacer un Reclamo</button>
     </div>
 </section>
     
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 La Libertad Avanza - Carcarañá | Todos los derechos reservados</p>
-    </footer>
+<!-- Footer -->
+<footer id="footer">
+    <p>&copy; 2025 La Libertad Avanza - Carcarañá | Todos los derechos reservados</p>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
