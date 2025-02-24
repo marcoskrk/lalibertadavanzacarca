@@ -19,6 +19,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px; /* Espacio entre los iconos */
+    margin-top: 20px;
 }
 
 .social-icons a {
