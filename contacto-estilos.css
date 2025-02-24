@@ -5,30 +5,31 @@
     background-position: center;
     height: 100vh; /* Hace que la imagen cubra todo el alto de la pantalla */
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start; /* Esto mantiene los elementos en la parte superior */
+    align-items: center; /* Centra los elementos verticalmente */
     flex-direction: column;
     text-align: center;
     color: black;
     padding: 20px;
+    margin-top: -20px; /* Ajusta este valor para mover los elementos más arriba */
 }
 
 /* Estilo para los iconos de redes sociales */
 .social-icons {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Centra los iconos */
     gap: 20px; /* Espacio entre los iconos */
 }
 
 .social-icons a {
     font-size: 50px; /* Tamaño de los iconos */
-    color: 800080;
+    color: #800080; /* Color morado para los iconos */
     text-decoration: none;
 }
 
 .social-icons a:hover {
-  color: #007bff; /* Cambia el color al pasar el ratón */
+    color: #007bff; /* Cambia el color al pasar el ratón */
 }
 
 .social-icons i {
@@ -37,24 +38,4 @@
 
 .social-icons a:hover i {
     transform: scale(1.2); /* Aumenta el tamaño de los iconos al pasar el ratón */
-}
-
-
-/* Título "Nuestras Redes Oficiales" */
-.redes-titulo {
-    font-size: 2rem; /* Tamaño grande */
-    color: #333; /* Color oscuro para el texto */
-    text-align: center; /* Centrar el título */
-    margin-bottom: 20px; /* Espacio debajo del título */
-    font-weight: bold; /* Negrita */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    margin-top: 50px; /* Subir el título hacia arriba (ajusta este valor según sea necesario) */
-}
-
-/* Estilo de los iconos de redes sociales */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Espacio entre los iconos */
-    margin-top: 50px;
 }
