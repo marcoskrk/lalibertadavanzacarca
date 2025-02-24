@@ -1,6 +1,6 @@
 /* Fondo de la página de contacto */
 #contacto {
-    background-image: url('tu-imagen.jpg'); /* Asegúrate de reemplazar con el nombre correcto de tu imagen */
+    background-image: url('agila.jpg'); /* Asegúrate de reemplazar con el nombre correcto de tu imagen */
     background-size: cover;
     background-position: center;
     height: 100vh; /* Hace que la imagen cubra todo el alto de la pantalla */
