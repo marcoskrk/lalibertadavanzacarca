@@ -325,3 +325,67 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+
+
+
+/* Estilo del botón hamburguesa, nuevo intento */
+.menu-toggle {
+    display: none; /* Ocultar por defecto */
+    cursor: pointer;
+    flex-direction: column;
+    position: absolute;
+    top: 20px; /* Espacio desde la parte superior */
+    right: 20px; /* Alinearlo a la derecha */
+}
+
+/* Estilo de las barras del botón hamburguesa */
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Para pantallas pequeñas (por debajo de 768px) */
+@media screen and (max-width: 768px) {
+    /* Mostrar el botón hamburguesa */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Menú oculto por defecto */
+    .menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #333; /* Fondo oscuro para el menú */
+        position: absolute;
+        top: 60px; /* Para que no se solape con el botón */
+        left: 0;
+        padding: 15px;
+    }
+
+    /* Mostrar el menú cuando tenga la clase active */
+    .menu.active {
+        display: block;
+    }
+
+    /* Enlaces del menú */
+    .menu li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    .menu li a:hover {
+        background-color: #575757;
+    }
+}
+
