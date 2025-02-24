@@ -331,7 +331,7 @@ footer {
     text-align: center;
     line-height: 50px;
     color: #333; /* Color de los íconos */
-    font-size: 1.5rem; /* Tamaño de los íconos */
+    font-size: 10.5rem; /* Tamaño de los íconos */
     transition: transform 0.3s, background-color 0.3s; /* Animación al pasar el mouse */
 }
 
