@@ -48,7 +48,7 @@
     margin-bottom: 20px; /* Espacio debajo del título */
     font-weight: bold; /* Negrita */
     text-transform: uppercase; /* Texto en mayúsculas */
-    margin-top: -20px; /* Subir el título hacia arriba (ajusta este valor según sea necesario) */
+    margin-top: 50px; /* Subir el título hacia arriba (ajusta este valor según sea necesario) */
 }
 
 /* Estilo de los iconos de redes sociales */
@@ -56,5 +56,5 @@
     display: flex;
     justify-content: center;
     gap: 20px; /* Espacio entre los iconos */
-    margin-top: 20px;
+    margin-top: 50px;
 }
