@@ -324,8 +324,8 @@ footer {
 
 #contacto .social-icons a {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
     background-color: rgba(255, 255, 255, 0.8); /* Fondo translúcido para los íconos */
     border-radius: 50%; /* Hace que los íconos sean círculos */
     text-align: center;
