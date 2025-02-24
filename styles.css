@@ -46,18 +46,7 @@ body {
     background-color: #575757;
 }
 
-/* Estilo para el botón hamburguesa */
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-}
 
-.menu-toggle .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
 }
 /* Estilos de la sección de "Inicio" */
 #inicio {
